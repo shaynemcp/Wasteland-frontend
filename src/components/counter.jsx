@@ -6,13 +6,10 @@ export default class Counter extends Component {
         tags: ['tag 1', 'tag2', 'tag3']
     };
 
-    constructor() {
-        super();
-        this.hanldeIncrement = this.hanldeIncrement.bind(this);
-    }
 
-    hanldeIncrement() {
+    hanldeIncrement = () => {
         console.log('Your vote has been counted', this)
+        this.setState({ count: this.state.count + 1 });
 
     }
 
@@ -28,7 +25,7 @@ export default class Counter extends Component {
 
     renderTags() {
         if (this.state.tags.length === 0) return <p> There are no tags!</p>;
-        return    <ul>{this.state.tags.map(tag => <li key = {tag}>{tag} <button> - </button> <button onClick={this.hanldeIncrement}> + </button></li>)}</ul>
+        return    <ul>{this.state.tags.map(tag => <li key = {tag}> {this.state.count} {tag} <button onClick={this.hanldeIncrement}> + </button></li>)}</ul>
     }
 
     getBadgeClasses() {
