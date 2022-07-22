@@ -20,6 +20,7 @@ export default class Counter extends Component {
         console.log('Your vote has been counted', this)
         this.setState({ count: this.state.count + 1 });
         this.setState({ count1: this.state.count1 +1});
+        console.log("hi")
 
     }
 
