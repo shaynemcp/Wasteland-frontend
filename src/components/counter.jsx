@@ -189,7 +189,7 @@ export default class Counter extends Component {
         return    <ul>{this.state.tags.map(tag => <li key = {tag}> {this.state.count} {tag} <button onClick={this.hanldeIncrement}> + </button></li>)}</ul>
     }
 
-    showVoteButton(){
+    showVoteButton() {
         if (this.state.tags.length === 0) return <p> There are no tags!</p>
         return <button type="button" class="btn btn-sm btn-outline-secondary" onClick={this.hanldeIncrement}> Vote </button>
     }

@@ -1,0 +1,14 @@
+.cardlist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    columns: 33%;
+    align-items: center;
+    justify-content: center;
+}
+
+li {
+    list-style: none;
+}
+
+

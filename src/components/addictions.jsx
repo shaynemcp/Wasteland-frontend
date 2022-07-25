@@ -1,4 +1,6 @@
 import React, {Component} from "react";
+import "./addictions.css"
+
 
 export default class Addictions extends Component {
 state = {
