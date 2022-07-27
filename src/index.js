@@ -3,12 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-import Angel from './components/angel';
-import AllMine from './components/allMine';
-import BadLuck from './components/badLuck';
-import RollingStone from './components/rollingStone';
-import Addictions from './components/addictions';
-import JackieBrown from './components/jackieBrown';
 import Intro from './components/intro';
 import Counters from './components/counters';
 
