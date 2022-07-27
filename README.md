@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+This project is also deployed to firebase. For any dev changes, clear browser cache & run the following in terminal: 
+yarn build,
+firebase deploy
+
 ## Available Scripts
 
 In the project directory, you can run:
