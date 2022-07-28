@@ -11,7 +11,8 @@ const dbClient = new Pool({
 dbClient.connect();
 
 
-dbClient.query('Select * from wastelandschema.song', (err, res) => {
+
+dbClient.query('Select * from wastelandschema.song order by song_title', (err, res) => {
     if( ! err){
         console.log(res.rows);
     } else {
